@@ -1,8 +1,9 @@
 import { Module, ValidationPipe } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { APP_PIPE } from '@nestjs/core';
-import { TodoModule } from './todo/todo.module';
-import { PrismaModule } from './prisma/prisma.module';
+import { TodoModule } from './Modules/todo/todo.module';
+import { PrismaModule } from './Modules/prisma/prisma.module';
+import { HealthModule } from './Modules/health/health.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { PrismaModule } from './prisma/prisma.module';
     }),
     TodoModule,
     PrismaModule,
+    HealthModule,
   ],
   providers: [
     {

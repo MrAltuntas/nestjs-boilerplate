@@ -15,8 +15,8 @@ async function bootstrap() {
   );
 
   const config = new DocumentBuilder()
-    .setTitle('Todo API')
-    .setDescription('Todo List API Documentation')
+    .setTitle('Growth Hacking API')
+    .setDescription('Growth Hacking API Documentation')
     .setVersion('1.0')
     .build();
 
